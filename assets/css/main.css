@@ -76,7 +76,8 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+
+h1
 h2,
 h3,
 h4,
@@ -84,6 +85,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+  
 }
 
 h5 {
@@ -229,7 +231,7 @@ h5 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: #0c5036;
+  background-color: rgba(41, 102, 87, 1);
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -613,6 +615,7 @@ h5 {
 }
 
 .footer .credits {
+  --color: white;
   margin-top: 5px;
   font-size: 13px;
 }
@@ -802,18 +805,8 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero .confondo {
-  background-image: url('assets\img\hero-img.png'); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Cubrir todo el contenedor */
-  background-repeat: no-repeat; /* No repetir la imagen */
-  background-position: center; /* Centrar la imagen */
-  height: 100%; /* Ajusta la altura según sea necesario */
-  width: 100%;
-}
-
 
 .hero {
-  background-color: white;
   width: 100%;
   min-height: 60vh;
   position: relative;
@@ -822,6 +815,7 @@ section,
   align-items: center;
   
 }
+
 
 .hero h1 {
   margin: 0;
@@ -887,7 +881,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background-color: #0c5036;
+ 
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 20px;
@@ -1052,6 +1046,10 @@ font-weight: lighter;
 
 }
 
+.menu .fondo{
+  background-image: url('assest/img/productos-fondo.png');
+
+}
 .menu .titulo{
   color: white;
 }
@@ -1251,12 +1249,12 @@ font-weight: lighter;
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: white;
   opacity: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: rgb(255, 136, 0);
 }
 
 /*--------------------------------------------------------------
@@ -1279,13 +1277,13 @@ font-weight: lighter;
 # Chefs Section
 --------------------------------------------------------------*/
 .chefs {
-  background-color: #0c5036;
+  background-color:  rgba(41, 102, 87, 1);
 
 }
 
 
 .chefs .team-member {
-  background-color: #0c5036;
+  background-color:  rgba(41, 102, 87, 1);
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
